@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Lake Erie Lodge is a relaxed lakeside motel stay with comfortable rooms, a pool, and easy access to the shoreline."
+    />
+    <title>Lake Erie Lodge | Lakeside Motel</title>
+    <script>
+      document.documentElement.classList.add("js");
+    </script>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Lake Erie Lodge home">
+        <img src="./logo/logo.png" alt="Lake Erie Lodge logo" />
+      </a>
+
+      <button class="menu-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="#rooms">Rooms</a>
+        <a href="#amenities">Amenities</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <a class="header-cta" href="#booking">Book now</a>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero-media" aria-hidden="true">
+          <img class="hero-slide is-active" src="./photo/Title.avif" alt="" />
+          <img class="hero-slide" src="./photo/l.webp" alt="" />
+          <img class="hero-slide" src="./photo/pool1.webp" alt="" />
+        </div>
+        <div class="hero-overlay"></div>
+
+        <div class="hero-content">
+          <p class="eyebrow">Lakeside comfort on Lake Erie</p>
+          <h1>Lake Erie Lodge</h1>
+          <p class="hero-copy">
+            A calm motel stay with welcoming rooms, outdoor spaces, and easy access to the water.
+          </p>
+        </div>
+
+        <form class="booking-panel" id="booking">
+          <label>
+            <span>Check in</span>
+            <input type="date" name="checkin" required />
+          </label>
+          <label>
+            <span>Check out</span>
+            <input type="date" name="checkout" required />
+          </label>
+          <label>
+            <span>Guests</span>
+            <select name="guests">
+              <option>1 guest</option>
+              <option selected>2 guests</option>
+              <option>3 guests</option>
+              <option>4 guests</option>
+            </select>
+          </label>
+          <button type="submit">Check availability</button>
+        </form>
+      </section>
+
+      <section class="intro band reveal">
+        <div class="section-heading">
+          <p class="eyebrow">Stay close to the lake</p>
+          <h2>A polished, relaxed base for weekends, road trips, and family stays.</h2>
+        </div>
+        <div class="intro-copy">
+          <p>
+            Lake Erie Lodge combines classic motel convenience with a more refined visual feel: direct room access,
+            bright interiors, poolside downtime, and quick access to local shoreline attractions.
+          </p>
+          <div class="stats" aria-label="Property highlights">
+            <strong><span>Pool</span>Outdoor</strong>
+            <strong><span>Rooms</span>Comfort-first</strong>
+            <strong><span>Setting</span>Lakeside</strong>
+          </div>
+        </div>
+      </section>
+
+      <section class="rooms band reveal" id="rooms">
+        <div class="section-heading compact">
+          <p class="eyebrow">Rooms</p>
+          <h2>Simple, clean, and easy to settle into.</h2>
+        </div>
+
+        <div class="room-grid">
+          <article class="room-card">
+            <img src="./photo/r.avif" alt="Guest room with two beds" />
+            <div>
+              <h3>Double Room</h3>
+              <p>Comfortable layout for couples, friends, or small families.</p>
+            </div>
+          </article>
+          <article class="room-card">
+            <img src="./photo/r3.avif" alt="Guest room with a queen bed" />
+            <div>
+              <h3>Queen Room</h3>
+              <p>A quieter stay with warm finishes and practical amenities.</p>
+            </div>
+          </article>
+          <article class="room-card">
+            <img src="./photo/R1.webp" alt="Guest room sitting area" />
+            <div>
+              <h3>Extended Stay</h3>
+              <p>Extra room to unwind after a day around the lake.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="amenities band reveal" id="amenities">
+        <div class="section-heading compact">
+          <p class="eyebrow">Amenities</p>
+          <h2>Everything guests expect from an easy motel stay.</h2>
+        </div>
+
+        <div class="amenity-grid">
+          <article>
+            <span>01</span>
+            <h3>Outdoor pool</h3>
+            <p>A bright place to cool off and slow down between outings.</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>Convenient parking</h3>
+            <p>Simple arrival and departure with parking close to your room.</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>Lake access</h3>
+            <p>Stay close to shoreline views, walks, and nearby recreation.</p>
+          </article>
+          <article>
+            <span>04</span>
+            <h3>Guest essentials</h3>
+            <p>Wi-Fi, climate control, fresh linens, and everyday comfort.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="gallery band reveal" id="gallery">
+        <div class="section-heading compact">
+          <p class="eyebrow">Gallery</p>
+          <h2>A closer look at the property.</h2>
+        </div>
+
+        <div class="gallery-grid">
+          <button class="gallery-item featured" type="button" data-image="./photo/l1.webp">
+            <img src="./photo/l1.webp" alt="Lodge exterior" />
+          </button>
+          <button class="gallery-item" type="button" data-image="./photo/pool.webp">
+            <img src="./photo/pool.webp" alt="Outdoor pool" />
+          </button>
+          <button class="gallery-item" type="button" data-image="./photo/o.webp">
+            <img src="./photo/o.webp" alt="Outdoor seating area" />
+          </button>
+          <button class="gallery-item" type="button" data-image="./photo/R2.webp">
+            <img src="./photo/R2.webp" alt="Guest room detail" />
+          </button>
+          <button class="gallery-item" type="button" data-image="./photo/t.webp">
+            <img src="./photo/t.webp" alt="Property sign and landscaping" />
+          </button>
+        </div>
+      </section>
+
+      <section class="local band reveal">
+        <img src="./photo/1.avif" alt="Lake Erie shoreline view" />
+        <div>
+          <p class="eyebrow">Explore nearby</p>
+          <h2>Built for the kind of stay that spends more time outside than in.</h2>
+          <p>
+            Position the lodge as a practical home base for waterfront walks, family trips, fishing weekends, and
+            regional attractions. This area can be updated with exact nearby destinations once the final brief is added.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer" id="contact">
+      <div>
+        <img src="./logo/logo.png" alt="" />
+        <p>Lake Erie Lodge</p>
+      </div>
+      <div class="footer-links">
+        <a href="tel:+10000000000">+1 (000) 000-0000</a>
+        <a href="mailto:stay@lakeerielodge.com">stay@lakeerielodge.com</a>
+        <span>Lake Erie region</span>
+      </div>
+    </footer>
+
+    <dialog class="lightbox">
+      <button type="button" aria-label="Close gallery">Close</button>
+      <img src="" alt="" />
+    </dialog>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
